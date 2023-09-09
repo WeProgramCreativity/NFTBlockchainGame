@@ -84,7 +84,7 @@ def main():
             print(f"{i + 1}. {nft.name} ({nft.value} coins)")
 
         event_chance = random.randint(1, 100)
-        if event_chance <= 20:
+        if event_chance <= 99:
             event = trigger_random_event()
             handle_event(event, player)
 
